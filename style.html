@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <div class="clockButtons">
+    <button id="clockTrigger" onclick="startClock()">
+      START
+    </button>
+  </div>
+
+  <div id="clock">
+
+    <div class="clock_element">
+      Hours : --- |
+
+    </div>
+    <div class="clock_element">
+
+      Minutes :--- |
+    </div>
+    <div class="clock_element">
+      Seconds :---
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <script>
+
+
+
+    function display() {
+      let b = new Date();
+      let a = document.querySelector("#clock").children
+
+      a[0].innerHTML = "<span>    Hours :</span>" + b.getHours();
+      a[1].innerHTML = "<span>    |Minutes :</span>" + b.getMinutes();
+      a[2].innerHTML = "<span>    |Seconds :</span>" + b.getSeconds();
+
+    }
+
+
+    function startClock() {
+
+      setInterval(display, 1000)
+
+
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>

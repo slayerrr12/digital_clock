@@ -1,0 +1,50 @@
+#clockTrigger {
+    margin-left: 45%;
+    margin-top: 20px;
+    width: 150px;
+    height: 75px;
+    color: blue;
+    font-family: 'Zen Dots', cursive;
+    border-radius: 20px;
+    border: 5px solid black;
+    box-shadow: 5px 5px 30px rgb(19, 89, 169);
+    font-size: 25PX;
+
+
+}
+
+#clockTrigger:hover {
+    background-color: red;
+    transform: scale(1.05);
+
+}
+
+#clock {
+    display: flex;
+    border: 5px solid rgb(239, 239, 239);
+    margin-top: 100px;
+    width: fit-content;
+    margin-left: 15%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    border-radius: 30px;
+
+
+}
+
+.clock_element {
+    font-size: 50px;
+    padding: 10px;
+    color: white;
+    font-family: 'Zen Dots', cursive;
+
+
+
+
+}
+
+body {
+    background-color: aqua;
+}
